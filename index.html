@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Calculador</title>
+</head>
+<body>
+    <section class="main">
+        <div class="mainCinema">
+            <div class="mainCinemaHeader">
+                <h2>Escoje todas las peliculas veras durante un mes en el cine.</h2>
+            </div>
+            <div class="mainCinemaCore">
+                <div class="mainCinemaMoviesList">
+                <label>Movie List</label>
+                <select id="movie" class="moviesList">
+                    <optgroup id="listMovies" class="moviesListContainer">
+                    </optgroup>
+                </select>
+                </div>
+                <div class="mainCinemaButtons">
+                    <div class="buttonsOperations">
+                        <button id="addElement" class="add" onclick="movieSelected()">ADD</button>
+                        <button id="removeElement" class="remove" onclick="">REMOVE</button>
+                        <button id="calculate" class="calculate" onclick="">CALCULATE</button>
+                    </div>
+                </div>
+                <div class="mainCinemaSelectedMovies">
+                    <label>My Movie List</label>
+                    <select id="myMovie" class="myMoviesList">
+                        <optgroup id="myListMovies" class="myMoviesListContainer">
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="mainCinemaShowResult">
+                Tu gasto total mensual al ver <span class="moviesCount">#</span> de peliculas en el cine es de $ <span class="totalCost"></span>.
+            </div>
+        </div>
+        <div class="mainStreamPlatform">
+
+        </div>
+    </section>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

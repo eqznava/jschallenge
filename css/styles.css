@@ -1,0 +1,138 @@
+body{
+    background-color: #7CB5BF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    background-color: #8DCFDA;
+    margin: 50px auto;
+    width: 65%;
+    height: 690px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 2px #3D595E,
+                        -2px 2px 2px #3D595E,
+                        -3px 3px 2px #3D595E,
+                        -4px 4px 2px #3D595E,
+                        -5px 5px 2px #3D595E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mainCinema{
+    width: 95%;
+    height: 45%;
+    border: 1px solid #6996f6;
+    border-radius: 5px;
+}
+
+.mainCinemaHeader,
+.mainCinemaShowResult{
+    text-align: center;
+}
+
+.mainCinemaCore{
+    width: 95%;
+    height: 200px;
+    margin: 0px auto;
+    display: flex;
+    gap: 5px;
+}
+
+.mainCinemaMoviesList,
+.mainCinemaButtons,
+.mainCinemaSelectedMovies{
+    /* border: 1px solid black; */
+    width: 33%;
+    height: 200px;
+}
+
+.mainCinemaMoviesList,
+.mainCinemaSelectedMovies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.moviesList,
+.myMoviesList{
+    width: 95%;
+    margin: 0px auto;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.moviesListContainer,
+.myMoviesListContainer{
+    font-size: 10px;
+    height: 200px;
+}
+
+.moviesListContainer option,
+.myMoviesListContainer option{
+    font-size: 1.2em;
+}
+
+.mainCinemaButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsOperations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.add,
+.remove,
+.calculate{
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #6996f6;
+    height: 30px;
+    width: 80%;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.add:hover,
+.remove:hover,
+.calculate:hover{
+    box-shadow: -1px 1px 2px #98ADD9,
+                        -2px 2px 2px #98ADD9,
+                        -3px 3px 2px #98ADD9,
+                        -4px 4px 2px #98ADD9,
+                        -5px 5px 2px #98ADD9;
+}
+
+.moviesSelected{
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+    height: 196px;
+    resize: none;
+}
+
+.mainCinemaShowResult{
+    margin-top:10px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* --------------- Stream platform  ---------------*/
+
+.mainStreamPlatform{
+    width: 95%;
+    height: 45%;
+    border: 1px solid #6996f6;
+    border-radius:5px;
+}
