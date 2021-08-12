@@ -20,7 +20,7 @@ sendMovies();
 
 //--------------------------------------------------------------------------
 const myMovies = [];
-
+const PRICE_MOVIE = 45;
 // Buttons operations
 
 function movieSelected() {
@@ -34,7 +34,17 @@ function movieSelected() {
 
 function removeElement() {
     // Remove button
-    let ultimo = document.getElementById('myMovie');
-    document.body.removeChild(ultimo);
-    myMovies.push(movie);
+    location.reload();
 }
+
+function calculate(){
+    // Calculate cost
+    let result = myMovies.length * PRICE_MOVIE;
+    let qtyMovies = myMovies.length;
+    let totalMovies = document.getElementById('moviesCount');
+    totalMovies.innerText = qtyMovies;
+    let resultado = document.getElementById('totalCost');
+    resultado.innerText = result;
+}
+
+

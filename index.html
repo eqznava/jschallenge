@@ -11,7 +11,7 @@
     <section class="main">
         <div class="mainCinema">
             <div class="mainCinemaHeader">
-                <h2>Escoje todas las peliculas veras durante un mes en el cine.</h2>
+                <h2>Escoje las peliculas que veras en un mes el costo de renta es de $45.00</h2>
             </div>
             <div class="mainCinemaCore">
                 <div class="mainCinemaMoviesList">
@@ -24,8 +24,8 @@
                 <div class="mainCinemaButtons">
                     <div class="buttonsOperations">
                         <button id="addElement" class="add" onclick="movieSelected()">ADD</button>
-                        <button id="removeElement" class="remove" onclick="">REMOVE</button>
-                        <button id="calculate" class="calculate" onclick="">CALCULATE</button>
+                        <button id="removeElement" class="clear" onclick="removeElement()">CLEAR</button>
+                        <button id="calculate" class="calculate" onclick="calculate()">CALCULATE</button>
                     </div>
                 </div>
                 <div class="mainCinemaSelectedMovies">
@@ -37,12 +37,52 @@
                 </div>
             </div>
             <div class="mainCinemaShowResult">
-                Tu gasto total mensual al ver <span class="moviesCount">#</span> de peliculas en el cine es de $ <span class="totalCost"></span>.
+                <p>Tu gasto total mensual al ver <strong><span id="moviesCount"></span></strong> de peliculas en el cine es de $ <strong><span id="totalCost"></span></strong>.</p>
             </div>
         </div>
         <div class="mainStreamPlatform">
-
+            <h2>Escoje las plataformas en donde encontrarias las mismas peliculas.</h2>
+            <p>El costo de las plataformas es por mes.</p>
+            <div class="imgStreamPlatformContainer">
+                <div class="imgContainer">
+                    <img src="img/ntf.png" alt="netflix logo">
+                    <div class="selectionContainer">
+                        <div class="cost">$139.00</div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <img src="img/amazon.jpg" alt="amazon logo">
+                    <div class="selectionContainer">
+                        <div class="cost">$99.00</div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <img src="img/fox_play.jpg" alt="fox play logo">
+                    <div class="selectionContainer">
+                        <div class="cost">$200.00</div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <img src="img/cv.png" alt="claro video logo">
+                    <div class="selectionContainer">
+                        <div class="cost">$99.00</div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <img src="img/disney.png" alt="disney plus logo">
+                    <div class="selectionContainer">
+                        <div class="cost">$130.00</div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="compare">
     </section>
     <script src="scripts/index.js"></script>
 </body>
