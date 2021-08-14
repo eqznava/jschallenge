@@ -24,8 +24,6 @@
                 <div class="mainCinemaButtons">
                     <div class="buttonsOperations">
                         <button id="addElement" class="add" onclick="movieSelected()">ADD</button>
-                        <button id="removeElement" class="clear" onclick="removeElement()">CLEAR</button>
-                        <button id="calculate" class="calculate" onclick="calculate()">CALCULATE</button>
                     </div>
                 </div>
                 <div class="mainCinemaSelectedMovies">
@@ -37,7 +35,7 @@
                 </div>
             </div>
             <div class="mainCinemaShowResult">
-                <p>Tu gasto total mensual al ver <strong><span id="moviesCount"></span></strong> de peliculas en el cine es de $ <strong><span id="totalCost"></span></strong>.</p>
+                <p>Tu gasto total mensual al ver <strong><span id="moviesCount"></span></strong> de peliculas en el cine es de <strong>$</strong> <strong><span id="totalCost"></span></strong>.</p>
             </div>
         </div>
         <div class="mainStreamPlatform">
@@ -48,41 +46,53 @@
                     <img src="img/ntf.png" alt="netflix logo">
                     <div class="selectionContainer">
                         <div class="cost">$139.00</div>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="" id="netflix" onclick="netflixCost()">
                     </div>
                 </div>
                 <div class="imgContainer">
                     <img src="img/amazon.jpg" alt="amazon logo">
                     <div class="selectionContainer">
                         <div class="cost">$99.00</div>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" id="amazon" onclick="amazonCost()">
                     </div>
                 </div>
                 <div class="imgContainer">
                     <img src="img/fox_play.jpg" alt="fox play logo">
                     <div class="selectionContainer">
                         <div class="cost">$200.00</div>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" id="fox" onclick="foxCost()">
                     </div>
                 </div>
                 <div class="imgContainer">
                     <img src="img/cv.png" alt="claro video logo">
                     <div class="selectionContainer">
                         <div class="cost">$99.00</div>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" id="claro" onclick="claroCost()">
                     </div>
                 </div>
                 <div class="imgContainer">
                     <img src="img/disney.png" alt="disney plus logo">
                     <div class="selectionContainer">
                         <div class="cost">$130.00</div>
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" id="disney" onclick="disneyCost()">
                     </div>
                 </div>
             </div>
+            <p class="platformResult">El costo total mensual de tus <strong><span id="platformCount"></span></strong> plataformas de streming es de <strong>$</strong><strong><span id="platformCost"></span></strong></p>
         </div>
     </section>
-    <section class="compare">
+    <section class="right">
+        <div class="compare">
+            <h3>Quieres saber lo que combiene más?</h3>
+            <button class="compareButton" id="compareAll" onclick="calculateAll()">COMPARAR</button>
+            <button id="removeElement" class="clear" onclick="removeElement()">CLEAR ALL</button>
+            <div class="resultOfCompare">
+                <p id="resultCompareText"></p>
+            </div>
+        </div>
+        <div class="challenge">
+            <img src="./img/jsch.png" alt="logo jsChallenge">
+        </div>
     </section>
     <script src="scripts/index.js"></script>
 </body>
