@@ -1,0 +1,246 @@
+@media screen and (max-width: 963px) {
+    .mainCinemaHeader h2,
+    .mainStreamPlatform h2{
+        font-size: 1.1em;
+    }
+
+.mainCinemaMoviesList, .mainCinemaSelectedMovies{
+    font-size: 0.9em;
+}
+
+.imgStreamPlatformContainer {
+    margin-top: 32px;
+}
+
+.imgContainer {
+    height: 130px;
+}
+
+.imgContainer > img{
+    height: 85px;
+}
+
+.resultOfCompare {
+    width: 90%;
+}
+
+}
+
+@media screen and (max-width: 923px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+.main, .right{
+    width:90%;
+    margin: 10px auto;
+}
+
+    .imgStreamPlatformContainer{
+        height: 135px;
+    }
+
+    .resultOfCompare  p{
+        margin: auto 15px;
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .main{
+        height: 100%;
+        padding: 10px;
+    }
+
+    .mainCinemaHeader h2,
+    .mainStreamPlatform h2{
+        font-size: 1em;
+    }
+
+    .mainCinema,
+    .mainStreamPlatform {
+        padding: 10px;
+    }
+
+    .mainStreamPlatform > p{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:660px) {
+    .main{
+        height: 100%;
+        padding: 10px;
+    }
+
+    .mainCinemaMoviesList{
+        width: 38%;
+    }
+
+    .mainCinemaButtons{
+        width: 24%;
+    }
+
+    .mainCinemaSelectedMovies{
+        width: 38%;
+    }
+
+    .moviesListContainer option, .myMoviesListContainer option {
+        font-size: 0.9em;
+    }
+
+    .mainCinemaHeader h2,
+    .mainStreamPlatform h2{
+        font-size: 0.9em;
+    }
+
+    .add{
+        font-size: 0.8em;
+    }
+
+    .mainCinemaCore {
+        height: 140px;
+    }
+
+    .mainCinemaShowResult {
+        bottom: -5px;
+    }
+
+    .mainStreamPlatform > p{
+        font-size: 0.9em;
+    }
+
+    .imgStreamPlatformContainer {
+        display: flex;
+        justify-content: center;
+        height: 280px;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 15px;
+    }
+
+    .imgContainer {
+        width: 25%;
+
+}
+
+}
+
+@media screen and (max-width:590px) {
+    .mainCinemaHeader h2,
+    .mainStreamPlatform h2{
+        font-size: 0.8em;
+    }
+
+    .mainCinemaMoviesList label,
+    .mainCinemaSelectedMovies label{
+        font-size: 0.8em;
+    }
+
+    .add {
+        font-size: 0.7em;
+    }
+
+    .mainCinemaShowResult > p{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .mainCinemaCore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 190px;
+    }
+
+    .mainCinemaMoviesList,
+    .mainCinemaButtons,
+    .mainCinemaSelectedMovies{
+        width: 80%;
+    }
+
+    .mainCinemaButtons{
+        position: relative;
+        top: 60px;
+        font-size: 1.2em;
+    }
+
+    .mainCinemaSelectedMovies{
+        position: relative;
+        bottom: 60px;
+    }
+
+    .imgStreamPlatformContainer {
+        width: 95%;
+    }
+
+    .imgContainer {
+        width: 30%;
+    }
+
+    .imgStreamPlatformContainer{
+        column-gap: 15px;
+    }
+
+    .cost {
+        font-size: 0.8em;
+    }
+
+    .mainCinemaShowResult > p,
+    .mainStreamPlatform > p{
+        text-align: center;
+    }
+
+    .challenge h2{
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .imgStreamPlatformContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .imgContainer {
+        width: 90%;
+        height: 150px;
+    }
+
+    .cost{
+        font-size: 1em;
+    }
+
+    .challenge h2 {
+        font-size: 1.1em;
+    }
+
+}
+
+@media screen and (max-width: 402px){
+.compare > h3 {
+    font-size: 0.9em;
+}
+.challenge h2 {
+    font-size: 0.9em;
+}
+
+}
+
+@media screen and (max-width: 332px){
+.compare > h3 {
+    font-size: 0.9em;
+}
+.challenge h2 {
+    font-size: 0.8em;
+}
+
+}

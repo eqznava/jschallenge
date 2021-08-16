@@ -1,3 +1,23 @@
+/* Animations */
+@keyframes blink_text{
+    0%{
+        color:#226c8f;
+    }
+    25%{
+        color:blueviolet;
+    }
+    50%{
+        color: #f937af;
+    }
+    75%{
+        color:gold;
+    }
+    100%{
+        color:#226c8f;
+    }
+}
+/* End Animation */
+
 body{
     background-color: #7CB5BF;
     font-family: Arial, Helvetica, sans-serif;
@@ -244,4 +264,8 @@ body{
                         -3px 3px 2px #6996f6,
                         -4px 4px 2px #6996f6,
                         -5px 5px 2px #6996f6;
+}
+
+.nameBlink{
+    animation: blink_text 5s infinite linear;
 }

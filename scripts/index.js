@@ -3,7 +3,7 @@
 function sendMovies() {
     let movies = ['Vengadores: Infinity War', 'Pantera Negra', 'Jurassic World: El reino caído',
         'Los Increíbles 2', 'Aquaman Warner Bros', 'Bohemian Rhapsody','Venom', 'Mission: Impossible - Fallout',
-        'Deadpool 2', 'Animales fantásticos: Los crímenes de Grindelwald','Insidious: The Last Key',
+        'Deadpool 2', 'Los crímenes de Grindelwald','Insidious: The Last Key',
         'El pasajero', 'Proud Mary', 'Cincuenta sombras liberadas','Freak Show','12 Strong', 'Den of Thieves',
         'La leyenda del Charro Negro', 'Forever My Girl', 'Early Man','Maze Runner: The Death Cure',
         'Armed', 'Winchester', 'The Cloverfield Paradox', 'Peter Rabbit', '15:17 Tren a París','Kri', 'Black Panther',
